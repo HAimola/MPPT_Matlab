@@ -1,5 +1,5 @@
 # MPPT_Matlab
-  Script utlizado para simular as características de tensão, corrente e potência de uma célula fotovoltaica e, por fim descobrir o ponto de tensão que gera a máxima potência da célula.
+   Script utlizado para simular as características de tensão, corrente e potência de uma célula fotovoltaica e, por fim descobrir o ponto de tensão que gera a máxima potência da célula. Parte de uma pesquisa feita na Faculdade Engenheiro Salvador Arena sob a disciplina de Cálculo Numérico.
   
 # Quick Start
 ```Matlab Console
@@ -11,4 +11,13 @@ ans:
 ```
 
 # Configuração
+  É possível configurar o programa para simular paineis com parâmetros diferentes. Todas as constantes do painel podem ser obtidas pelo seu datasheet.
+
+![Configurações](screenshots/variaveis.png)
+
+# Autores
+- AÍMOLA, H.
+- BAGLIONE, G.
+- DE OLIVEIRA, G.
+- RADES, H.
 
