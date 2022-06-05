@@ -1,12 +1,10 @@
 [Pow, Vs] = eval_Painel_Solar(298, 5, true, false);
 [coef, S] = interpolar(Pow, Vs, 7, 'ponta_lin');
-polyval(coef, 45.250536015760602) 
 
 deriv = polyder(coef);
 syms X
 eq = poly2sym(deriv, X);
 raizes = vpasolve(eq == 0);
-
 
 root = inf;
 resposta = 0;
@@ -69,9 +67,9 @@ function [Currs, Vs] =  eval_Painel_Solar(Tin, resolution, PV, make_plot)
     Eg = 1.12; % Bandgap do Si
 
     % Constantes do Painel
-    Ns = 12;
-    Isc = 13.79;
-    Voc = 49.34/Ns;
+    Ns = 12;	% Numero de celulas em serie
+    Isc = 13.79; % Corrente de curto circuito
+    Voc = 49.34/Ns; % Tensao de circuito aberto por celula
 
     N = 1.4; % Ideality factor
     Kisc = 0.048; % %/oC
